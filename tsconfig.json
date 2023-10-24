@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "outDir": "./dist/out-tsc",
+    // "allowJs": true,
+    "sourceMap": true,
+    "declaration": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "target": "es6",
+    "lib": [
+      "dom",
+      "esnext.asynciterable",
+      "ES2019"
+    ],
+
+    /* Advanced Options */
+    "skipLibCheck": true,
+    /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+  },
+  "exclude": ["dist", "node_modules"]
+}

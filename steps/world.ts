@@ -11,7 +11,9 @@ Before(async () => {
     browser = await chromium.launch({ headless: false });
     const context = await browser.newContext();
     page = await context.newPage();
-    await page.goto("https://www.demoblaze.com");
+    await page.goto(
+      "https://www.akveo.com/blur-admin-mint/#/components/mail/inbox"
+    );
   } catch (error) {
     throw new Error(`failed navigation due to ${error}`);
   }
