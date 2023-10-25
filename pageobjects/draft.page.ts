@@ -1,3 +1,3 @@
 import { EmailAbstractPage } from "./emailabstract.page";
 
-export class InboxPage extends EmailAbstractPage {}
+export class DraftPage extends EmailAbstractPage {}

@@ -18,18 +18,5 @@ export class ComposePage extends BasePage {
     await (await page.waitForSelector(`button[class='btn btn-send']`)).click();
   }
 
-  async navigateToEmailSection(section: EmailSection) {
-    await (
-      await page.waitForSelector(`href="#/components/mail/${section}"`)
-    ).click();
-  }
 }
 
-export enum EmailSection {
-  INBOX = "inbox",
-  SENT_MAIL = "sent",
-  IMPORTANT = "important",
-  DRAFT = "draft",
-  SPAM = "spam",
-  TRASH = "trash",
-}
